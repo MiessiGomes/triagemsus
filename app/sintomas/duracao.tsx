@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, StyleSheet, KeyboardAvoidingView, Platform } from 'react-native';
+import { View, StyleSheet, KeyboardAvoidingView } from 'react-native';
 import { Text, TextInput, Button, HelperText, SegmentedButtons } from 'react-native-paper';
 import { router } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -28,7 +28,7 @@ export default function Duracao() {
 
   return (
     <SafeAreaView style={styles.safe} edges={['bottom']}>
-      <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : undefined} style={styles.kav}>
+      <KeyboardAvoidingView behavior="padding" style={styles.kav}>
         <View style={styles.content}>
           <Text variant="headlineSmall" style={styles.title}>{S.duration_title}</Text>
           <Text variant="bodyMedium" style={styles.subtitle}>{S.duration_subtitle}</Text>

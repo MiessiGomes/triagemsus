@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "TriageSUS",
-    "slug": "triagesus",
+    "name": "TriagemSUS",
+    "slug": "triagemsus",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "scheme": "triagesus",
+    "scheme": "triagemsus",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
