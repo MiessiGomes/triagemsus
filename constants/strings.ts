@@ -1,6 +1,6 @@
 export const S = {
   // Onboarding
-  onboarding_title: 'TriageSUS',
+  onboarding_title: 'TriagemSUS',
   onboarding_subtitle: 'Orientação de Triagem Clínica',
   onboarding_disclaimer: `Este aplicativo é uma ferramenta de orientação e apoio à decisão. Ele NÃO substitui a avaliação médica presencial.\n\nAs recomendações geradas são baseadas nos sintomas relatados e não constituem diagnóstico médico.\n\nEm caso de dúvida, sempre procure um profissional de saúde.`,
   onboarding_button: 'Entendi e quero continuar',

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, StyleSheet, ScrollView, KeyboardAvoidingView, Platform } from 'react-native';
+import { View, StyleSheet, ScrollView, KeyboardAvoidingView } from 'react-native';
 import { Text, TextInput, Button, SegmentedButtons, Divider, HelperText } from 'react-native-paper';
 import { router } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -38,8 +38,8 @@ export default function DadosPaciente() {
 
   return (
     <SafeAreaView style={styles.safe}>
-      <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : undefined} style={styles.kav}>
-        <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
+      <KeyboardAvoidingView behavior="padding" style={styles.kav}>
+        <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false} keyboardShouldPersistTaps="handled">
           <Text variant="headlineSmall" style={styles.title}>
             {S.patient_title}
           </Text>
@@ -118,7 +118,7 @@ export default function DadosPaciente() {
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: '#FAFAFA' },
   kav: { flex: 1 },
-  content: { padding: 24, gap: 16, paddingBottom: 40 },
+  content: { padding: 24, gap: 16, paddingBottom: 80 },
   title: { fontWeight: 'bold', color: '#212121', marginBottom: 8 },
   section: { gap: 8 },
   sectionLabel: { color: '#424242', marginBottom: 4 },
