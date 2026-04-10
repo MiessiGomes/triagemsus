@@ -1,0 +1,18 @@
+export const CONDITIONS: string[] = [
+  'Hipertensão arterial',
+  'Diabetes mellitus',
+  'Doença cardíaca',
+  'Asma / DPOC',
+  'Doença renal crônica',
+  'HIV/AIDS',
+  'Câncer em tratamento',
+  'AVC prévio',
+  'Gestação',
+  'Obesidade mórbida',
+  'Doença hepática crônica',
+  'Epilepsia / Convulsões',
+  'Transtorno mental',
+  'Uso de anticoagulantes',
+  'Imunossupressão',
+  'Nenhuma',
+];
